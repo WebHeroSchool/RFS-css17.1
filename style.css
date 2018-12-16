@@ -1,0 +1,126 @@
+@media (max-width:440px) {
+  .menu__links a {
+    display: none;
+}  
+  
+  .block {
+    display: block;
+}
+
+body { 
+  min-width: 300px;
+  margin: 0;
+}
+
+.block2 {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-burger {  
+  position: absolute;
+  z-index: 10; 
+}
+
+ input {
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  padding-right: 50px;
+  cursor: pointer;
+  opacity: 0;   /* скрыть */
+  z-index: 20; 
+}
+
+.menu-burger span{
+  width: 55px;
+  height: 8px;
+  margin-bottom: 10px;
+  margin-left: 207px;
+  background: #7f8fa6;
+  border-radius: 4px;
+  transition: .3s linear;
+  display: block;
+  position: relative;
+  z-index: 2; 
+  
+}
+
+.image1 {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+input:checked ~ .span1 {
+  background-color: #0c2461;
+  transform: rotate(45deg) translate(8px);
+  transform-origin: 4px 0px;
+}
+
+input:checked ~ .span2 {
+  background-color: #0c2461;
+  transform: rotate(495deg) translate(4px);   
+}
+
+input:checked ~ .span3 {
+  background-color: #0c2461;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+input:checked ~ .image1 {
+  display: none;
+}
+
+input:checked ~ .image1 {
+  display: none;
+}
+
+.show-menu .show-menu-item {
+  margin-top: -5.3px;
+  display: block;
+  width: 263px;
+  height: 44px;
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  padding: 11px 9px 11px 12px;
+  box-sizing: border-box;
+}
+
+.menu-burger input {
+  display: block;
+}
+}
+
+
+/* Desctop browser */
+
+a {
+    color: #306096;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+.menu__links-item {
+  display: block;
+  width: 263px;
+  height: 44px;
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  padding: 11px 9px 11px 12px;
+  box-sizing: border-box;
+}
+
+.block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.show-menu-item,
+input {
+  display: none;
+}
